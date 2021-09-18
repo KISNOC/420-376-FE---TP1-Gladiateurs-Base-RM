@@ -13,7 +13,7 @@ public class Personnage {
     
     // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
     public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
-        // TODO : Constructeur AVEC paramètres
+        //Constructeur AVEC paramètres
         this.nom = nom;
         this.pointsDeVie = pvs;
         this.valeurMaxAttaque = attaqueMax;
@@ -22,7 +22,7 @@ public class Personnage {
     }
 
     public Personnage() {
-        // TODO : Constructeur SANS paramètres qui initialise à ZÉRO ou à ""
+        //Constructeur SANS paramètres qui initialise à ZÉRO ou à ""
         String nom = "";
         int pointsDeVie = -1;
         int valeurMaxAttaque = -1;
@@ -48,7 +48,7 @@ public class Personnage {
     }
 
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
-    // TODO : Les getters
+    //Les getters
     public int getInitiative() {    
         return initiative;
     }
@@ -69,7 +69,7 @@ public class Personnage {
         this.valeurDefense = valeurDefense;
     }
 
-    // TODO : Les setters
+    //Les setters
     public void setInitiative(int initiative) {    
         this.initiative = initiative;
     }
@@ -77,7 +77,7 @@ public class Personnage {
     // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
-        // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
+        //Afficher les infos du personnage, tel que montré dans l'énoncé
         String statut = "";
         if (pointsDeVie <= 0) {
             statut = "Mort";
