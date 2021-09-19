@@ -33,7 +33,6 @@ public class Personnage {
     // </editor-fold>
     public String getNom() {
         return nom;
-        // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
     }
 
     public int getPointsDeVie() {
@@ -55,7 +54,6 @@ public class Personnage {
     }
     public void setNom(String nom) {
         this.nom = nom;
-        // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
     }
 
     public void setPointsDeVie(int pointsDeVie) {

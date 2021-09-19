@@ -48,10 +48,7 @@ public class JeuGladiateurs {
         affichage.afficherSeparateurDeTour();
     }
     // Après la boucle, afficher le résultat du combat
-    
+    affichage.afficheVictoire(personnage1, personnage2);
     // </editor-fold>
-    
-    
     }
-
 }
