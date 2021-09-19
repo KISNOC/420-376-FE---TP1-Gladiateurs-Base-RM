@@ -4,7 +4,7 @@ import java.util.Random;
 public class Personnage {
 
     // <editor-fold defaultstate="collapsed" desc="Attributs">
-    // TODO : Mettre vos attributs ici
+    // Mettre vos attributs ici
     String nom;
     int pointsDeVie;
     int valeurMaxAttaque;
@@ -105,7 +105,7 @@ public class Personnage {
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
-        // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
+        // Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
         int dommages;
         int forceDeFrappe;
         int valeurDefenseDefenseur;
@@ -118,8 +118,11 @@ public class Personnage {
             dommages = 0;
         }
         personnageCible.pointsDeVie -= dommages;
+        if (personnageCible.pointsDeVie <= 0) {
+            personnageCible.pointsDeVie = 0;
+        }
         
-        //modifier les points de vie du personnage cible, afficher les détails
+        // modifier les points de vie du personnage cible, afficher les détails
         // sur l'attaque, tel que montré dans l'énoncé.
         System.out.println("\n" + nom + " attaque avec une puissance de : " + forceDeFrappe);
         System.out.println(personnageCible.nom + " a une défence de : " + valeurDefenseDefenseur);
