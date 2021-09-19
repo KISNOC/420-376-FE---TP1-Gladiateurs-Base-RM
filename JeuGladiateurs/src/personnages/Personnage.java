@@ -76,6 +76,7 @@ public class Personnage {
     }
 
     // </editor-fold>
+    
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
         //Afficher les infos du personnage, tel que montré dans l'énoncé
@@ -105,8 +106,24 @@ public class Personnage {
 
     public void frapperPersonnage(Personnage personnageCible) {
         // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
+        int dommages;
+        int forceDeFrappe;
+        int valeurDefenseDefenseur;
+        forceDeFrappe = attaqueCalcul();
+        valeurDefenseDefenseur = personnageCible.valeurDefense;
+        
+        dommages = forceDeFrappe - valeurDefenseDefenseur;
+        
+        if (dommages < 0) {
+            dommages = 0;
+        }
+        personnageCible.pointsDeVie -= dommages;
+        
         //modifier les points de vie du personnage cible, afficher les détails
         // sur l'attaque, tel que montré dans l'énoncé.
+        System.out.println("\n" + nom + " attaque avec une puissance de : " + forceDeFrappe);
+        System.out.println(personnageCible.nom + " a une défence de : " + valeurDefenseDefenseur);
+        System.out.println("Les dommages sont donc de : " + dommages);
     }
 
     public void setNewInitiativeRandom() {
