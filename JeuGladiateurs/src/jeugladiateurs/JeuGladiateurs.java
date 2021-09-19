@@ -28,6 +28,7 @@ public class JeuGladiateurs {
     // TODO : Après la boucle, afficher le résultat du combat
     // </editor-fold>
     
+
     }
 
 }
