@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class Mirmillon extends Personnage {
 
-    //TODO Changer Personnage par Mirmillion pour la création du personnage
+    // Changer Personnage par Mirmillion pour la création du personnage
     public Mirmillon(String nom, int pointsDeVie, int valeurMaxAttaque, int valeurDefense, int initiative){
         super(nom, pointsDeVie, valeurMaxAttaque, valeurDefense, initiative);
     }
