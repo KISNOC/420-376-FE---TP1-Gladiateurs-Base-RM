@@ -4,6 +4,7 @@ import personnages.Personnage;
 import combat.CompteurDeTour;
 import combat.AffichageEcran;
 import java.util.List;
+import personnages.Mirmillon;
 
 public class JeuGladiateurs {
 
@@ -13,7 +14,7 @@ public class JeuGladiateurs {
     CompteurDeTour tour = new CompteurDeTour();
     AffichageEcran affichage = new AffichageEcran();
     Personnage personnage1 = new Personnage("Bob le malchanceux", 15, 15 ,70 ,15);
-    Personnage personnage2 = new Personnage("Igor l’empaleur", 25, 5, 100, 30);     
+    Mirmillon personnage2 = new Mirmillon("Igor l’empaleur", 25, 5, 100, 30);     
 
     // </editor-fold>
 

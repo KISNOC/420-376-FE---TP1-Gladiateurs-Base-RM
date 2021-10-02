@@ -30,7 +30,6 @@ public class Personnage {
         int valeurDefense = -1;
         int initiative = -1;
     }
-    // </editor-fold>
     public String getNom() {
         return nom;
     }
@@ -46,6 +45,7 @@ public class Personnage {
     public int getValeurDefense() {
         return valeurDefense;
     }
+    // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
     //Les getters
